@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ubx-D8-Jz6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ubx-D8-Jz6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="106" y="-835"/>
         </scene>
-        <!--Top Regions Table View Controller - Top Places-->
+        <!--Top RegionsCDTVC - Top Regions-->
         <scene sceneID="d3z-DV-ocD">
             <objects>
-                <tableViewController title="Top Places" id="1S0-ng-xOJ" customClass="TopRegionsTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Top Regions" id="1S0-ng-xOJ" customClass="TopRegionsCDTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="XmG-t2-JgR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
                             <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </activityIndicatorView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Place" textLabel="JDm-hU-CyS" detailTextLabel="Lcx-TZ-ZKB" style="IBUITableViewCellStyleSubtitle" id="3VJ-Uc-tsk">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Region Cell" textLabel="JDm-hU-CyS" detailTextLabel="Lcx-TZ-ZKB" style="IBUITableViewCellStyleSubtitle" id="3VJ-Uc-tsk">
                                 <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3VJ-Uc-tsk" id="ASB-Dx-CJP">
