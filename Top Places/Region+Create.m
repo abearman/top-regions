@@ -24,7 +24,7 @@
         if (!matches || [matches count] > 1) {
             // handle error
         } else if (![matches count]) {
-            region = [NSEntityDescription insertNewObjectForEntityForName:name inManagedObjectContext:context];
+            region = [NSEntityDescription insertNewObjectForEntityForName:@"Region" inManagedObjectContext:context];
             region.name = name;
             // set numPhotographersTakenPhoto here?
         } else {

@@ -35,8 +35,7 @@
         photo.photoURL = [[FlickrFetcher URLforPhoto:photoDictionary format:FlickrPhotoFormatLarge] absoluteString];
         
         // Query Flickr again (off the main queue) to get the region info
-        NSURL *placeInfoURL = [FlickrFetcher URLforInformationAboutPlace:FLICKR_PHOTO_PLACE_ID];
-        NSString __block *regionName;
+        NSURL *placeInfoURL = [FlickrFetcher URLforInformationAboutPlace:[photoDictionary valueForKey:FLICKR_PHOTO_PLACE_ID]];
         
         NSURLRequest *request = [NSURLRequest requestWithURL:placeInfoURL];
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
@@ -47,7 +46,8 @@
                     if ([request.URL isEqual:placeInfoURL]) {
                         NSData *data = [NSData dataWithContentsOfURL:localfile];
                         NSDictionary *placeInfoDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-                        regionName = [FlickrFetcher extractRegionNameFromPlaceInformation:placeInfoDict];
+                        NSString *regionName = [FlickrFetcher extractRegionNameFromPlaceInformation:placeInfoDict];
+                        photo.whereTaken = [Region regionWithName:regionName inManagedObject:context];
                         
                         dispatch_async(dispatch_get_main_queue(), ^{
                             // Stuff to do on main queue
@@ -57,8 +57,6 @@
             }];
         [task resume];
         
-        // Loading a Photo causes a Region to be created
-        photo.whereTaken = [Region regionWithName:regionName inManagedObject:context];
     }
     
     return photo;
