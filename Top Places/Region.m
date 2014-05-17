@@ -1,5 +1,5 @@
 //
-//  Photographer.m
+//  Region.m
 //  Top Regions
 //
 //  Created by Amy Bearman on 5/17/14.

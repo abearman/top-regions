@@ -11,12 +11,10 @@
 
 @implementation Top_PlacesAppDelegate
 
-#define FETCH_DEBUG NO
+#define FETCH_DEBUG YES
 #define FOREGROUND_FETCH_INTERVAL (FETCH_DEBUG ? 5 : (15*60))
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [NSTimer scheduledTimerWithTimeInterval:FOREGROUND_FETCH_INTERVAL
                                      target:self
                                    selector:@selector(processFetchTimer:)

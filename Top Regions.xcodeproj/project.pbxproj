@@ -16,10 +16,10 @@
 		656EBE571927E8F2002D29CD /* PlaceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE541927E8F2002D29CD /* PlaceTVC.m */; };
 		656EBE581927E8F2002D29CD /* RecentsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE561927E8F2002D29CD /* RecentsTVC.m */; };
 		656EBE5B1927E8FE002D29CD /* TopRegionsCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE5A1927E8FE002D29CD /* TopRegionsCDTVC.m */; };
-		656EBE5E1927E90C002D29CD /* TopRegionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE5D1927E90C002D29CD /* TopRegionsViewController.m */; };
 		656EBE621927EA02002D29CD /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE611927EA02002D29CD /* Region.m */; };
 		656EBE651927EA03002D29CD /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE641927EA03002D29CD /* Photo.m */; };
 		656EBE681927EA53002D29CD /* Region+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE671927EA53002D29CD /* Region+Create.m */; };
+		656EBE6B19280FDE002D29CD /* DefaultTopRegionsCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE6A19280FDE002D29CD /* DefaultTopRegionsCDTVC.m */; };
 		6582C565191D752A00CD6180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6582C564191D752A00CD6180 /* Foundation.framework */; };
 		6582C567191D752A00CD6180 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6582C566191D752A00CD6180 /* CoreGraphics.framework */; };
 		6582C569191D752A00CD6180 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6582C568191D752A00CD6180 /* UIKit.framework */; };
@@ -65,14 +65,14 @@
 		656EBE561927E8F2002D29CD /* RecentsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentsTVC.m; path = "../../../../../../dev/Top Places/Top Places/RecentsTVC.m"; sourceTree = "<group>"; };
 		656EBE591927E8FE002D29CD /* TopRegionsCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopRegionsCDTVC.h; path = "../../../../../../dev/Top Places/Top Places/TopRegionsCDTVC.h"; sourceTree = "<group>"; };
 		656EBE5A1927E8FE002D29CD /* TopRegionsCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopRegionsCDTVC.m; path = "../../../../../../dev/Top Places/Top Places/TopRegionsCDTVC.m"; sourceTree = "<group>"; };
-		656EBE5C1927E90C002D29CD /* TopRegionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopRegionsViewController.h; path = "../../../../../../dev/Top Places/Top Places/TopRegionsViewController.h"; sourceTree = "<group>"; };
-		656EBE5D1927E90C002D29CD /* TopRegionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopRegionsViewController.m; path = "../../../../../../dev/Top Places/Top Places/TopRegionsViewController.m"; sourceTree = "<group>"; };
 		656EBE601927EA02002D29CD /* Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
 		656EBE611927EA02002D29CD /* Region.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Region.m; sourceTree = "<group>"; };
 		656EBE631927EA03002D29CD /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		656EBE641927EA03002D29CD /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		656EBE661927EA53002D29CD /* Region+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Region+Create.h"; sourceTree = "<group>"; };
 		656EBE671927EA53002D29CD /* Region+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Region+Create.m"; sourceTree = "<group>"; };
+		656EBE6919280FDE002D29CD /* DefaultTopRegionsCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultTopRegionsCDTVC.h; sourceTree = "<group>"; };
+		656EBE6A19280FDE002D29CD /* DefaultTopRegionsCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultTopRegionsCDTVC.m; sourceTree = "<group>"; };
 		6582C561191D752A00CD6180 /* Top Regions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Regions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6582C564191D752A00CD6180 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6582C566191D752A00CD6180 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,8 +142,6 @@
 		656EBE461927E600002D29CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				656EBE5C1927E90C002D29CD /* TopRegionsViewController.h */,
-				656EBE5D1927E90C002D29CD /* TopRegionsViewController.m */,
 				656EBE471927E636002D29CD /* PhotoViewController.h */,
 				656EBE481927E636002D29CD /* PhotoViewController.m */,
 				656EBE5F1927E9B9002D29CD /* Table View Controllers */,
@@ -156,6 +154,8 @@
 			children = (
 				656EBE591927E8FE002D29CD /* TopRegionsCDTVC.h */,
 				656EBE5A1927E8FE002D29CD /* TopRegionsCDTVC.m */,
+				656EBE6919280FDE002D29CD /* DefaultTopRegionsCDTVC.h */,
+				656EBE6A19280FDE002D29CD /* DefaultTopRegionsCDTVC.m */,
 				656EBE501927E8E7002D29CD /* PhotoListTVC.h */,
 				656EBE511927E8E7002D29CD /* PhotoListTVC.m */,
 				656EBE531927E8F2002D29CD /* PlaceTVC.h */,
@@ -369,13 +369,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656EBE5E1927E90C002D29CD /* TopRegionsViewController.m in Sources */,
 				656EBE411927E279002D29CD /* Photo+Flickr.m in Sources */,
 				656EBE311927E153002D29CD /* CoreDataTableViewController.m in Sources */,
 				656EBE581927E8F2002D29CD /* RecentsTVC.m in Sources */,
 				6582C575191D752A00CD6180 /* TopRegionsAppDelegate.m in Sources */,
 				656EBE571927E8F2002D29CD /* PlaceTVC.m in Sources */,
 				656EBE5B1927E8FE002D29CD /* TopRegionsCDTVC.m in Sources */,
+				656EBE6B19280FDE002D29CD /* DefaultTopRegionsCDTVC.m in Sources */,
 				656EBE491927E636002D29CD /* PhotoViewController.m in Sources */,
 				6582C5B6191DED9F00CD6180 /* FlickrFetcher.m in Sources */,
 				656EBE391927E203002D29CD /* FlickrDatabase.m in Sources */,
