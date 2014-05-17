@@ -10,4 +10,29 @@
 
 @implementation Region (Create)
 
++ (Region *)regionWithName:(NSString *)name inManagedObject:(NSManagedObjectContext *)context {
+    
+    Region *region = nil;
+    
+    if ([name length]) {
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Region"];
+        request.predicate = [NSPredicate predicateWithFormat:@"name = %@", name];
+        
+        NSError *error;
+        NSArray *matches = [context executeFetchRequest:request error:&error];
+        
+        if (!matches || [matches count] > 1) {
+            // handle error
+        } else if (![matches count]) {
+            region = [NSEntityDescription insertNewObjectForEntityForName:name inManagedObjectContext:context];
+            region.name = name;
+            // set numPhotographersTakenPhoto here?
+        } else {
+            region = [matches lastObject];
+        }
+    }
+    
+    return region;
+}
+
 @end

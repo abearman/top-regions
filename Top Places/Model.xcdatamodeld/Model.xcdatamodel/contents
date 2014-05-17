@@ -16,7 +16,7 @@
         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="whereTaken" inverseEntity="Photo" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Photo" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Region" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Photo" positionX="-128" positionY="-2439" width="128" height="165"/>
+        <element name="Region" positionX="117" positionY="-2259" width="189" height="90"/>
     </elements>
 </model>

@@ -15,7 +15,7 @@
 		656EBE521927E8E7002D29CD /* PhotoListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE511927E8E7002D29CD /* PhotoListTVC.m */; };
 		656EBE571927E8F2002D29CD /* PlaceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE541927E8F2002D29CD /* PlaceTVC.m */; };
 		656EBE581927E8F2002D29CD /* RecentsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE561927E8F2002D29CD /* RecentsTVC.m */; };
-		656EBE5B1927E8FE002D29CD /* TopRegionsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE5A1927E8FE002D29CD /* TopRegionsTVC.m */; };
+		656EBE5B1927E8FE002D29CD /* TopRegionsCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE5A1927E8FE002D29CD /* TopRegionsCDTVC.m */; };
 		656EBE5E1927E90C002D29CD /* TopRegionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE5D1927E90C002D29CD /* TopRegionsViewController.m */; };
 		656EBE621927EA02002D29CD /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE611927EA02002D29CD /* Region.m */; };
 		656EBE651927EA03002D29CD /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EBE641927EA03002D29CD /* Photo.m */; };
@@ -63,8 +63,8 @@
 		656EBE541927E8F2002D29CD /* PlaceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceTVC.m; path = "../../../../../../dev/Top Places/Top Places/PlaceTVC.m"; sourceTree = "<group>"; };
 		656EBE551927E8F2002D29CD /* RecentsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecentsTVC.h; path = "../../../../../../dev/Top Places/Top Places/RecentsTVC.h"; sourceTree = "<group>"; };
 		656EBE561927E8F2002D29CD /* RecentsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentsTVC.m; path = "../../../../../../dev/Top Places/Top Places/RecentsTVC.m"; sourceTree = "<group>"; };
-		656EBE591927E8FE002D29CD /* TopRegionsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopRegionsTVC.h; path = "../../../../../../dev/Top Places/Top Places/TopRegionsTVC.h"; sourceTree = "<group>"; };
-		656EBE5A1927E8FE002D29CD /* TopRegionsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopRegionsTVC.m; path = "../../../../../../dev/Top Places/Top Places/TopRegionsTVC.m"; sourceTree = "<group>"; };
+		656EBE591927E8FE002D29CD /* TopRegionsCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopRegionsCDTVC.h; path = "../../../../../../dev/Top Places/Top Places/TopRegionsCDTVC.h"; sourceTree = "<group>"; };
+		656EBE5A1927E8FE002D29CD /* TopRegionsCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopRegionsCDTVC.m; path = "../../../../../../dev/Top Places/Top Places/TopRegionsCDTVC.m"; sourceTree = "<group>"; };
 		656EBE5C1927E90C002D29CD /* TopRegionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopRegionsViewController.h; path = "../../../../../../dev/Top Places/Top Places/TopRegionsViewController.h"; sourceTree = "<group>"; };
 		656EBE5D1927E90C002D29CD /* TopRegionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopRegionsViewController.m; path = "../../../../../../dev/Top Places/Top Places/TopRegionsViewController.m"; sourceTree = "<group>"; };
 		656EBE601927EA02002D29CD /* Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
@@ -154,14 +154,14 @@
 		656EBE5F1927E9B9002D29CD /* Table View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				656EBE591927E8FE002D29CD /* TopRegionsTVC.h */,
-				656EBE5A1927E8FE002D29CD /* TopRegionsTVC.m */,
+				656EBE591927E8FE002D29CD /* TopRegionsCDTVC.h */,
+				656EBE5A1927E8FE002D29CD /* TopRegionsCDTVC.m */,
+				656EBE501927E8E7002D29CD /* PhotoListTVC.h */,
+				656EBE511927E8E7002D29CD /* PhotoListTVC.m */,
 				656EBE531927E8F2002D29CD /* PlaceTVC.h */,
 				656EBE541927E8F2002D29CD /* PlaceTVC.m */,
 				656EBE551927E8F2002D29CD /* RecentsTVC.h */,
 				656EBE561927E8F2002D29CD /* RecentsTVC.m */,
-				656EBE501927E8E7002D29CD /* PhotoListTVC.h */,
-				656EBE511927E8E7002D29CD /* PhotoListTVC.m */,
 			);
 			name = "Table View Controllers";
 			sourceTree = "<group>";
@@ -375,7 +375,7 @@
 				656EBE581927E8F2002D29CD /* RecentsTVC.m in Sources */,
 				6582C575191D752A00CD6180 /* TopRegionsAppDelegate.m in Sources */,
 				656EBE571927E8F2002D29CD /* PlaceTVC.m in Sources */,
-				656EBE5B1927E8FE002D29CD /* TopRegionsTVC.m in Sources */,
+				656EBE5B1927E8FE002D29CD /* TopRegionsCDTVC.m in Sources */,
 				656EBE491927E636002D29CD /* PhotoViewController.m in Sources */,
 				6582C5B6191DED9F00CD6180 /* FlickrFetcher.m in Sources */,
 				656EBE391927E203002D29CD /* FlickrDatabase.m in Sources */,

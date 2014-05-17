@@ -10,4 +10,7 @@
 
 @interface Region (Create)
 
++ (Region *)regionWithName:(NSString *)name
+           inManagedObject:(NSManagedObjectContext *)context;
+
 @end
