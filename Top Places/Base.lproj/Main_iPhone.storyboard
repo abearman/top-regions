@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="825" y="-835"/>
         </scene>
-        <!--Place Table View Controller - Place Photos-->
+        <!--PlaceTVC - Place Photos-->
         <scene sceneID="hxy-Yc-yjG">
             <objects>
-                <tableViewController title="Place Photos" id="d5M-uq-VcH" customClass="PlaceTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Place Photos" id="d5M-uq-VcH" customClass="PlaceTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Zyh-4c-m1Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="106" y="-58"/>
         </scene>
-        <!--Recents Table View Controller - Recents-->
+        <!--RecentsTVC - Recents-->
         <scene sceneID="qw2-FH-DW1">
             <objects>
-                <tableViewController title="Recents" id="4xI-qx-1RN" customClass="RecentsTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Recents" id="4xI-qx-1RN" customClass="RecentsTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="0w9-er-TMg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

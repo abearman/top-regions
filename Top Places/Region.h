@@ -2,7 +2,7 @@
 //  Photographer.h
 //  Top Regions
 //
-//  Created by Amy Bearman on 5/14/14.
+//  Created by Amy Bearman on 5/17/14.
 //  Copyright (c) 2014 Amy Bearman. All rights reserved.
 //
 
@@ -11,13 +11,14 @@
 
 @class Photo;
 
-@interface Photographer : NSManagedObject
+@interface Region : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * numPhotographersTakenPhoto;
 @property (nonatomic, retain) NSSet *photos;
 @end
 
-@interface Photographer (CoreDataGeneratedAccessors)
+@interface Region (CoreDataGeneratedAccessors)
 
 - (void)addPhotosObject:(Photo *)value;
 - (void)removePhotosObject:(Photo *)value;

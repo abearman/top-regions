@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="3069" y="-2903"/>
         </scene>
-        <!--Place Table View Controller - Place Photos-->
+        <!--PlaceTVC - Place Photos-->
         <scene sceneID="cqp-Wg-FSE">
             <objects>
-                <tableViewController title="Place Photos" id="9cf-uu-qsn" customClass="PlaceTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Place Photos" id="9cf-uu-qsn" customClass="PlaceTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="rAg-kL-4aO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="289" y="-2399"/>
         </scene>
-        <!--Recents Table View Controller - Recents-->
+        <!--RecentsTVC - Recents-->
         <scene sceneID="r8p-QA-6Ku">
             <objects>
-                <tableViewController title="Recents" id="1oD-a1-B9P" customClass="RecentsTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Recents" id="1oD-a1-B9P" customClass="RecentsTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="RME-gp-fIL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

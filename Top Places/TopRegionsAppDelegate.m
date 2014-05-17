@@ -7,13 +7,33 @@
 //
 
 #import "TopRegionsAppDelegate.h"
+#import "FlickrDatabase.h"
 
 @implementation Top_PlacesAppDelegate
+
+#define FETCH_DEBUG NO
+#define FOREGROUND_FETCH_INTERVAL (FETCH_DEBUG ? 5 : (15*60))
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [NSTimer scheduledTimerWithTimeInterval:FOREGROUND_FETCH_INTERVAL
+                                     target:self
+                                   selector:@selector(processFetchTimer:)
+                                   userInfo:nil
+                                    repeats:YES];
+    [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     return YES;
+}
+
+- (void)processFetchTimer:(NSTimer *)timer {
+    [[FlickrDatabase sharedDefaultFlickrDatabase] fetch];
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    [[FlickrDatabase sharedDefaultFlickrDatabase] fetchWithCompletionHandler:^(BOOL success) {
+        completionHandler(success ? UIBackgroundFetchResultNewData : UIBackgroundFetchResultNoData);
+    }];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

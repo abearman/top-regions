@@ -2,20 +2,23 @@
 //  Photo.m
 //  Top Regions
 //
-//  Created by Amy Bearman on 5/14/14.
+//  Created by Amy Bearman on 5/17/14.
 //  Copyright (c) 2014 Amy Bearman. All rights reserved.
 //
 
 #import "Photo.h"
-#import "Photographer.h"
+#import "Region.h"
 
 
 @implementation Photo
 
 @dynamic title;
 @dynamic subtitle;
-@dynamic imageURL;
+@dynamic photoURL;
 @dynamic unique;
-@dynamic whoTook;
+@dynamic dateLastViewed;
+@dynamic thumbnailURL;
+@dynamic thumbnailData;
+@dynamic whereTaken;
 
 @end
