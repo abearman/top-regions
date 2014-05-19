@@ -9,6 +9,7 @@
 #import "Photo+Flickr.h"
 #import "FlickrFetcher.h"
 #import "Region+Create.h"
+#import "Photographer+Create.h"
 
 @implementation Photo (Flickr)
 
@@ -34,6 +35,9 @@
         photo.subtitle = [photoDictionary valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
         photo.photoURL = [[FlickrFetcher URLforPhoto:photoDictionary format:FlickrPhotoFormatLarge] absoluteString];
         
+        NSString *photographerName = [photoDictionary valueForKeyPath:FLICKR_PHOTO_OWNER];
+        photo.whoTook = [Photographer photographerWithName:photographerName inManagedObjectContext:context];
+        
         // Query Flickr again (off the main queue) to get the region info
         NSURL *placeInfoURL = [FlickrFetcher URLforInformationAboutPlace:[photoDictionary valueForKey:FLICKR_PHOTO_PLACE_ID]];
         
@@ -45,12 +49,15 @@
                 if (!error) {
                     if ([request.URL isEqual:placeInfoURL]) {
                         NSData *data = [NSData dataWithContentsOfURL:localfile];
-                        NSDictionary *placeInfoDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-                        NSString *regionName = [FlickrFetcher extractRegionNameFromPlaceInformation:placeInfoDict];
-                        photo.whereTaken = [Region regionWithName:regionName inManagedObject:context];
                         
                         dispatch_async(dispatch_get_main_queue(), ^{
                             // Stuff to do on main queue
+                            if (data) {
+                                NSDictionary *placeInfoDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                                NSString *regionName = [FlickrFetcher extractRegionNameFromPlaceInformation:placeInfoDict];
+                                
+                                photo.whereTaken = [Region regionWithName:regionName inManagedObject:context];
+                            }
                         });
                     }
                 }
@@ -60,12 +67,6 @@
     }
     
     return photo;
-}
-
-+ (void)loadPhotosFromFlickrArray:(NSArray *)photos intoManagedObjectObjectContext:(NSManagedObjectContext *)context {
-    for (NSDictionary *photo in photos) {
-        [self photoWithFlickrInfo:photo inManagedObjectContext:context];
-    }
 }
 
 

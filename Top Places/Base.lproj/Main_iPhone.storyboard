@@ -95,11 +95,11 @@
             </objects>
             <point key="canvasLocation" x="825" y="-835"/>
         </scene>
-        <!--PlaceTVC - Place Photos-->
+        <!--Default Photo ListTVC - Place Photos-->
         <scene sceneID="hxy-Yc-yjG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iat-0A-ANa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController title="Place Photos" id="d5M-uq-VcH" customClass="PlaceTVC" sceneMemberID="viewController">
+                <tableViewController title="Place Photos" id="d5M-uq-VcH" customClass="DefaultPhotoListTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Zyh-4c-m1Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +144,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="jEq-Sj-ua8"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="MJA-pe-aHl">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh" destination="d5M-uq-VcH" eventType="valueChanged" id="ufP-e3-Nob"/>
+                        </connections>
+                    </refreshControl>
                     <connections>
                         <outlet property="spinner" destination="IAy-0j-zDK" id="Mpc-0Z-aBU"/>
                     </connections>

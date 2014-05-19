@@ -1,16 +1,16 @@
 //
-//  Region.m
+//  Photographer.m
 //  Top Regions
 //
 //  Created by Amy Bearman on 5/19/14.
 //  Copyright (c) 2014 Amy Bearman. All rights reserved.
 //
 
-#import "Region.h"
+#import "Photographer.h"
 #import "Photo.h"
 
 
-@implementation Region
+@implementation Photographer
 
 @dynamic name;
 @dynamic photos;

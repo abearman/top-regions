@@ -7,6 +7,8 @@
 //
 
 #import "Region+Create.h"
+#import "Photo.h"
+#import "Photographer+Create.h"
 
 @implementation Region (Create)
 
@@ -26,9 +28,18 @@
         } else if (![matches count]) {
             region = [NSEntityDescription insertNewObjectForEntityForName:@"Region" inManagedObjectContext:context];
             region.name = name;
-            // set numPhotographersTakenPhoto here?
+            //region.numPhotographersTakenPhoto = [NSNumber numberWithInt:1];
         } else {
             region = [matches lastObject];
+            
+            /*NSMutableSet *photographersForRegion = [[NSMutableSet alloc] init];
+            for (Photo *photo in region.photos) {
+                Photographer *photographer = photo.whoTook;
+                if (![photographersForRegion containsObject:photographer]) {
+                    [photographersForRegion addObject:photographer];
+                }
+            }
+            region.numPhotographersTakenPhoto = [NSNumber numberWithInteger:[photographersForRegion count]];*/
         }
     }
     

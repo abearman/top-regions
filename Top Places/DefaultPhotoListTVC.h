@@ -1,18 +1,13 @@
 //
-//  Region.m
+//  DefaultPhotoListTVC.h
 //  Top Regions
 //
 //  Created by Amy Bearman on 5/19/14.
 //  Copyright (c) 2014 Amy Bearman. All rights reserved.
 //
 
-#import "Region.h"
-#import "Photo.h"
+#import "PhotoListTVC.h"
 
-
-@implementation Region
-
-@dynamic name;
-@dynamic photos;
+@interface DefaultPhotoListTVC : PhotoListTVC
 
 @end
