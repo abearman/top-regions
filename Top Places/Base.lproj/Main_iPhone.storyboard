@@ -95,11 +95,11 @@
             </objects>
             <point key="canvasLocation" x="825" y="-835"/>
         </scene>
-        <!--Default Photo ListTVC - Place Photos-->
+        <!--PlaceTVC - Place Photos-->
         <scene sceneID="hxy-Yc-yjG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iat-0A-ANa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController title="Place Photos" id="d5M-uq-VcH" customClass="DefaultPhotoListTVC" sceneMemberID="viewController">
+                <tableViewController title="Place Photos" id="d5M-uq-VcH" customClass="PlaceTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Zyh-4c-m1Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
