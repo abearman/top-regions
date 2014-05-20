@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Top Places/Photo+Flickr.m"
-            timestampString = "422228611.776607"
+            filePath = "Top Places/Region+Create.m"
+            timestampString = "422321079.17356"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "+photoWithFlickrInfo:inManagedObjectContext:"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "+regionWithName:inManagedObject:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
