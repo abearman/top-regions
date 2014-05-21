@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7E9-Fh-gsV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7E9-Fh-gsV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -40,21 +40,16 @@
             </objects>
             <point key="canvasLocation" x="2166" y="-2935"/>
         </scene>
-        <!--Top Regions Table View Controller - Top Regions-->
+        <!--Default Top RegionsCDTVC - Top Regions-->
         <scene sceneID="fUD-rm-q6A">
             <objects>
-                <tableViewController title="Top Regions" id="2BF-qO-JbL" customClass="TopRegionsTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Top Regions" id="2BF-qO-JbL" customClass="DefaultTopRegionsCDTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="J0I-db-mxU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="k9c-tp-qVp">
-                            <rect key="frame" x="0.0" y="173" width="320" height="36"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        </activityIndicatorView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Place" textLabel="l0h-U2-Mhc" detailTextLabel="wke-tf-2jL" style="IBUITableViewCellStyleSubtitle" id="U24-mp-B6J">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Region Cell" textLabel="l0h-U2-Mhc" detailTextLabel="wke-tf-2jL" style="IBUITableViewCellStyleSubtitle" id="U24-mp-B6J">
                                 <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U24-mp-B6J" id="otJ-Df-G2Z">
@@ -89,9 +84,6 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Top Regions" id="WLG-YG-YY4"/>
                     <navigationItem key="navigationItem" title="Top Regions" id="oGa-Ta-X6Y"/>
-                    <connections>
-                        <outlet property="spinner" destination="k9c-tp-qVp" id="EWP-Ab-Ng3"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="puF-Bo-MQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,11 +97,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="md4-2m-lKh">
-                            <rect key="frame" x="0.0" y="173" width="320" height="36"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo" textLabel="egk-QF-muR" detailTextLabel="ZMY-4H-lap" style="IBUITableViewCellStyleSubtitle" id="2d3-L6-orJ">
                                 <rect key="frame" x="0.0" y="119" width="320" height="44"/>
@@ -142,9 +129,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="rAe-QW-NSY"/>
-                    <connections>
-                        <outlet property="spinner" destination="md4-2m-lKh" id="aiB-k7-S9S"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fJ-sH-iUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,7 +170,6 @@
                     <navigationItem key="navigationItem" id="3OC-Zx-N8a"/>
                     <connections>
                         <outlet property="scrollView" destination="w4M-7I-8pC" id="ws9-pm-Jt8"/>
-                        <outlet property="spinner" destination="jWI-Yo-h8k" id="yPZ-SM-5id"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lF-dg-YOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
